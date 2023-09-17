@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+.header {
+  grid-column: 2 /-1;
+  border: 1px solid black;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar {
+  grid-row: 1/-1;
+  padding: 10px;
+  background-color: #0891b2;
+  font-size: 1.25rem;
+  color: white;
+  cursor: default;
+}
+.sidebar h3 {
+  display: flex;
+  gap: 1rem;
+  font-weight: bolder;
+  font-size: 2.25rem;
+  align-items: center;
+}
+.sidebar .iconify {
+  font-size: 2rem;
+  color: white;
+}
+.header .iconify,
+.content .iconify {
+  cursor: pointer;
+}
+.header .iconify:hover,
+.content .iconify:hover {
+  color: #0891b2;
+}
+li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+.content {
+  grid-row: 2/-1;
+  grid-column: 2/-1;
+  padding: 0.8rem 0.8rem;
+  grid-gap: 0.5rem;
+  background-color: lightgray;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
+}
+.projects-div {
+  grid-row: 1/-1;
+  grid-column: 1/5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.announcements-div {
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.trending-div {
+  grid-row: 2/-1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.header-div1,
+.header-div2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.buttons button {
+  background-color: #0891b2;
+  border-radius: 3rem;
+  border: none;
+  padding: 0.8rem 2.4rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.projects,
+.announcements,
+.trending {
+  font-size: 0.7rem;
+  border-radius: 8px;
+}
+.projects {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+  grid-gap: 0.8rem;
+}
+.project {
+  padding: 0.75rem 0.5rem;
+  background-color: white;
+  border-radius: 4px;
+}
+.announcements {
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+}
+.announcement {
+  padding: 0.25rem;
+}
+.trending {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trend {
+  display: flex;
+  padding: 0.25rem;
+}
+.trending .avatar {
+  width: 2rem;
+  height: 2rem;
+  background-color: yellow;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.options {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.iconify {
+  color: black;
+  font-size: 1.25rem;
+}
+
+.account .avatar {
+  width: 3rem;
+  height: 3rem;
+  background-color: yellow;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.greeting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.greeting .avatar {
+  width: 4rem;
+  height: 4rem;
+  background-color: yellow;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.header-div1 input {
+  border-radius: 16px;
+  width: 40vw;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  background-color: lightgray;
+  border: none;
+}
+.account {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+}
