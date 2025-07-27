@@ -3,8 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
+    <title>Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body></body>
+
+  <body>
+    <div id="grid-container">
+      <aside>
+        <div id="logo">Dashboard</div>
+        <ul>
+          <li>🏠 Home</li>
+          <li>📁 Projects</li>
+          <li>📊 Reports</li>
+          <li>⚙️ Settings</li>
+        </ul>
+      </aside>
+
+      <div>
+        <header>
+          <div id="search">
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div id="profile-area">
+            <img src="https://i.pravatar.cc/36?img=3" alt="User Profile" />
+            <span>John Doe</span>
+          </div>
+        </header>
+
+        <main>
+          <div id="content">
+            <div>
+              <section id="projects" class="section">
+                <div class="project-card">
+                  <h3>Project Alpha</h3>
+                  <p>Project description goes here.</p>
+                  <div class="project-options">
+                    <i>✏️</i>
+                    <i>🗑️</i>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <h3>Project Beta</h3>
+                  <p>Project description goes here.</p>
+                  <div class="project-options">
+                    <i>✏️</i>
+                    <i>🗑️</i>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <h3>Project Gamma</h3>
+                  <p>Project description goes here.</p>
+                  <div class="project-options">
+                    <i>✏️</i>
+                    <i>🗑️</i>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <h3>Project Delta</h3>
+                  <p>Project description goes here.</p>
+                  <div class="project-options">
+                    <i>✏️</i>
+                    <i>🗑️</i>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div id="sidebar-right">
+              <section id="announcements" class="section">
+                <h2>Announcements</h2>
+                <div class="announcement-card">
+                  System update scheduled on Friday at 6 PM.
+                </div>
+                <div class="announcement-card">
+                  New project guidelines released.
+                </div>
+                <div class="announcement-card">
+                  Team meeting tomorrow at 10 AM.
+                </div>
+              </section>
+
+              <section id="trending" class="section">
+                <h2>Trending</h2>
+                <div class="trending-card">
+                  <img src="https://i.pravatar.cc/32?img=1" alt="" />
+                  <span>@alice</span>
+                </div>
+                <div class="trending-card">
+                  <img src="https://i.pravatar.cc/32?img=2" alt="" />
+                  <span>@bob</span>
+                </div>
+                <div class="trending-card">
+                  <img src="https://i.pravatar.cc/32?img=5" alt="" />
+                  <span>@carol</span>
+                </div>
+                <div class="trending-card">
+                  <img src="https://i.pravatar.cc/32?img=7" alt="" />
+                  <span>@dave</span>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
 </html>
